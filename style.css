@@ -1,0 +1,164 @@
+/* Global view (desktop) */
+
+body {
+    font-family: 'Asap' ,sans-serif;
+}
+
+.header-container {
+    background-color: darkgrey;
+    min-height: 100px;
+    margin-bottom: 40px;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    border:1px solid white;
+    padding: 11px 25px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.col {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 40px;
+    background-color: springgreen;
+}
+
+.col p {
+    font-size: 0.875rem;
+    color: white;
+    padding: 20px 30px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/* tablet view */
+@media  (max-width: 768px) {
+
+    .col {
+        width: 47%;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+    
+    .button {
+        margin-left: 0;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: orange;
+        padding: 11px 25px;
+        border: white solid 1px;
+        margin-left: -50px;
+        text-align: center;
+    }
+
+
+}
+
+/* mobile view */
+
+@media  (max-width: 400px) {
+
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+ 
+
+}
